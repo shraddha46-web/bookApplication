@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="book_head" >
+        <h1>Gutenberg Project</h1>
+        <h5>A social cataloging website that allows you to freely search its database of books, annotations,
+            and reviews.</h5>
+
+    </div>
+    <div class="book_body" >
+        <ul>
+            <li class="list_item" *ngFor="let book of bookListType;let i = index" (click) ="gotoList(book)" >
+                <div   >
+                    <div class="list_img " >
+                        <img src="../../assets/images/{{book}}.svg" >
+                    </div>
+                    <div class="list_name" >
+                        {{book}}
+                    </div>
+                    <div class="list_arraow " >
+                        <img src="../../assets/images/Next.svg" >
+                    </div>
+                </div> 
+            </li>
+        </ul>
+       
+
+    </div>
+
+</div>

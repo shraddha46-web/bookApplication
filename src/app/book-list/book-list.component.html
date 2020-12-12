@@ -1,0 +1,103 @@
+<div class="container-fluid ">
+
+  <!-- <div class="book_category">
+<div >
+   <a routerLink="/books_category" ><img src="../../assets/images/Back.svg"></a>
+  </div>
+  <div >
+          <h3 class="heading2">{{topic}}</h3>
+        </div>
+        <div></div>
+  </div> -->
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="pull-left">
+        <div class="book_category">
+          <a class="" routerlink="/books_category" ng-reflect-router-link="/books_category" href="/books_category"><img
+              _ngcontent-fll-c18="" src="../../assets/images/Back.svg">
+            <span class="heading2">{{topic}}</span>
+          </a>
+        </div>
+
+
+      </div>
+      <div class="input-group">
+        <span class="input-group-append">
+          <button class="btn btn-outline-secondary searchbt" type="button">
+            <i class="fa fa-search"></i>
+            <img src="../../assets/images//Search.svg">
+          </button>
+        </span>
+        <!-- <input class="form-control py-2 border-right-0 border" type="search" #searchBox id="search-box" (input)="search(searchBox.value)"> -->
+        <input placeholder ="Search" class="form-control py-2 serach_box " type="text" #searchBox id="search-box"
+          (input)="search(searchBox.value)">
+        <!-- <input class="form-control py-2 border-right-0 border" type="search" value="search" id="example-search-input"> -->
+
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+
+
+
+
+
+  <div class="search-results backColor2" infiniteScroll [infiniteScrollDistance]="1" [infiniteScrollUpDistance]="1.5"
+    [infiniteScrollThrottle]="50"  (scrolled)="onScrollDown()">
+    <!--  -->
+    <div class="row pt-5 backColor2">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 p-2 row ">
+        <div class="col-md-2 p-2 " *ngFor="let book of allBookList; let i=index">
+          <!-- <div class="col-md-2 p-2 " *ngFor="let book of allBookList | slice:startIndex:lastIndex; let i=index"></div> -->
+          <!-- <div class="card" (click)="openLink(book)">
+            <img src="{{book.formats['image/jpeg']}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title booktitle txt_color3">{{book.title}}</h5>
+              <ng-container *ngFor="let b of book.authors">
+                <span href="#" class="bookauthor txt_color2">{{b.name}}</span>
+              </ng-container>
+
+            </div>
+          </div> -->
+        
+        <div class="" (click)="openLink(book)">
+          <div class=""> 
+            <img class="" src="{{book.formats['image/jpeg']}}" class=" list_rectangle" alt="...">
+          </div>
+          <div>
+            <div class=" booktitle txt_color3">{{book.title}}</div>
+              <ng-container *ngFor="let b of book.authors">
+                <span href="#" class="bookauthor txt_color2">{{b.name}}</span>
+              </ng-container>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</div>
+<!----Spinner-->
+
+<div class="row pb-5 ">
+  <div class="col-md-12 p-5">
+    <ngx-spinner bdOpacity=0.9 bgColor="#F0F0F6" size="default" color="#F0F0F6" type="ball-pulse-sync"
+      [fullScreen]="false">
+    </ngx-spinner>
+
+  </div>
+
+</div>
+
+<div *ngIf="!notEmptyPost" class="row pb-5">
+  <div class="col-md-12 d-flex justify-content-center">
+    <div class="text-muted h6 alert alert-secondary p-2">
+      No more Items to SHow
+    </div>
+
+  </div>
+
+</div>

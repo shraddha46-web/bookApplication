@@ -1,0 +1,79 @@
+.container{
+
+}
+
+.book_category a{
+  display: inline-flex;
+}
+.book_category span{
+  
+  padding-left: 10px;
+}
+.list_rectangle{
+  width: 114px;
+  /* height: 162px; */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+  /* height: -webkit-fit-content; */
+  height: -moz-fit-content;
+cursor:pointer;
+}
+ul li {
+    display:inline !important;
+  }
+  .box {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .serach_box{
+    background-color: #A0A0A0;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+
+  }
+  .serach_box input{
+    color:#333333;
+    font-family: "Montserrat, Regular";
+    font-size:16px;
+  }
+  .searchbt{
+    border:  1px solid gray !important;
+  }
+  .back_color{
+    background-color: #F0F0F6;
+  }
+
+  .search-results {
+    /* height: 20rem;
+    overflow: scroll; */
+    margin: 0 15px !important;
+  }
+  .booktitle{
+    font-family: "Montserrat, Regular";
+    font-size:12px;
+  }
+
+  .bookauthor{
+    font-family: "Montserrat, Regular";
+    font-size:12px;
+  }
+
+  .input-group{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card{
+    width: 100%;
+    height: 400px;
+    padding:15px;
+  }
+
+  .card-img-top{
+    height: 300px;
+    object-fit: fill;
+  }

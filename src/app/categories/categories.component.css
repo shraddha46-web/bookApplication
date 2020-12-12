@@ -1,0 +1,46 @@
+.container {
+
+}
+.category_body {
+  width: 100%;
+}
+.container span{
+  font-family: "Montserrat, Regular";
+font-size:16px;
+
+}
+.category_head{
+  padding: 25px;
+  background-image: url("../../assets/images/Pattern.svg");
+   /* height: 400px; */
+   /* width: 100%; */
+}
+.category{
+  
+}
+.genere_card{
+  background-color: #fff;
+ border-radius: 4px;
+padding-left: 10px;
+padding-right: 10px;
+ height:  50px;
+ /* background-color: blue; */
+ }
+ .category{
+    padding: 20px;
+ }
+ .category li span{
+  font-family:"Montserrat, Semi Bold" ;
+  font-size: 30px;
+ }
+ .catimg{
+       width: 6%;
+     }
+
+  .list_arraow {
+    float: right;
+    padding-top: 17px;
+  }
+  .category ul li{
+    display: inline;
+  }

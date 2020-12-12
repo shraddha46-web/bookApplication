@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+.labelColor{
+    color: #5E56E7;
+}
+.heading1{
+    font-family: "Montserrat, Semi Bold";
+    font-size:48px;
+}
+
+.heading2{
+    font-family: "Montserrat, Regular";
+    font-size:30px;
+}
+.category:hover{
+    cursor:pointer;
+}
+
+.txt_color1{
+    color: #F0F0F6;
+  }
+  .txt_color2{
+    color: #A0A0A0;
+  }
+  .txt_color3{
+    color: #333333;
+  }
+.backColor2{
+    background-color:#f8f7ff
+}
